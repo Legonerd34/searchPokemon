@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/Users/maxbushell/Documents/vscode/Python/python projects home/Java Script Course/searchPokemon/International_Pokémon_logo.svg.png")
+   
+
+}
+
+.container {
+    background-color: rgb(104, 104, 255);
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px;
+
+}
+
+.sprite {
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+input {
+    color: white;
+    background-color: black;
+    width: 480px;
+    height: 50px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button {
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 20px;
+    animation: buttonBackgroundReverse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+button:hover {
+    animation: buttonBackground;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes buttonBackground {
+    from {background-color: black}
+    to {background-color: white;}
+    from {color: white}
+    to {color: black}
+
+}
+@keyframes buttonBackgroundReverse {
+    from {background-color: white}
+    to {background-color: black;}
+    from {color: black}
+    to {color: white}
+
+}
+
+
